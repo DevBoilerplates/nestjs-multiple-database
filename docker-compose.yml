@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  db:
+    build: ./db
+    restart: always
+    environment:
+      POSTGRES_DB: nestjs-multiple-database-boilerplate
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: l0c4lp4ss
+    ports:
+      - 6432:5432
+      
